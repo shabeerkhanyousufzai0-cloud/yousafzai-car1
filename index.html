@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousafzai Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">YOUSAFZAI CARS</div>
+
+    <nav>
+        <button onclick="goPage(1)">Home</button>
+        <button onclick="goPage(2)">Cars</button>
+        <button onclick="goPage(3)">SUVs</button>
+        <button onclick="goPage(4)">Luxury</button>
+        <button onclick="goPage(5)">More Cars</button>
+    </nav>
+
+    <div class="searchBox">
+        <input id="searchInput" type="text" placeholder="Search car...">
+        <button onclick="searchCar()">Search</button>
+    </div>
+</header>
+
+
+<main id="app"></main>
+
+
+<!-- CAR DETAILS MODAL -->
+<div id="modal" class="modal">
+    <div class="modalBox">
+        <button class="close" onclick="closeModal()">✕</button>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalText"></p>
+
+        <button class="goldButton" onclick="closeModal()">
+            Close
+        </button>
+    </div>
+</div>
+
+
+<footer>
+    <h3>YOUSAFZAI CARS</h3>
+    <p>Premium Cars • SUVs • Business Class • Luxury Cars</p>
+    <p>WhatsApp: 0325-9089890</p>
+    <p>© 2026 Yousafzai Cars</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
